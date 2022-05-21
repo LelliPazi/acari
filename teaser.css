@@ -1,0 +1,69 @@
+:root {
+    --clr-neutral-100: hsl(0, 0%, 100%);
+}
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+.spalten-teaser {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+.teaser-button {
+    margin-top: 3rem;
+}
+.card {
+    --padding: 1rem 1.5rem 1rem 1.5rem;
+    color: var(--clr-neutral-100);
+    background-image: url("img/Dark-Background.jpg");
+    background-size: cover;
+    padding: 10rem 0 0;
+    max-width: 35ch;
+    border-radius: .5rem;
+    overflow: hidden;
+    transition: transform 500ms ease;
+    margin: auto;
+}
+.card-content {
+    padding: var(--padding);
+}
+.card-title {
+    position: relative;
+    margin: -1.5rem 0 0 0;
+    padding: 1.5rem 0 1.5rem 1.5rem;
+    color: var(--color-main);
+    font-size: 1.65em;
+}
+@media (hover) {
+    .card-content {
+        transform: translateY(100%);
+        transition: transform 500ms ease;
+    }
+    .card:hover .card-content,
+    .card:focus-within .card-content{
+        transform: translateY(0);
+        transition-delay: 300ms;
+    }
+}
+.teaser-button {
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+    border-radius: .5rem;
+}
+.teaser-button:hover,
+.teaser-button:focus {
+    background-color: var(--color-back-body);
+}
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+        transition-delay: 0ms !important;
+    }
+}
