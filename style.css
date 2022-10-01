@@ -1,5 +1,5 @@
 /*
-Theme Name: Vulcan-Gaming
+Theme Name: Acari
 Author: Patrick Lehofer
 Version: 1.0
 */
@@ -34,4 +34,7 @@ body {
 #info figure.aligncenter,
 #info figure.aligncenter img{
     width: 100%;
+}
+#content h1 {
+    margin: 0 38% 0 39%;
 }
