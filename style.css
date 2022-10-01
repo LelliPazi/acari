@@ -38,3 +38,8 @@ body {
 #content h1 {
     margin: 0 38% 0 39%;
 }
+#content .wp-container-3 {
+    width: 70vw;
+    margin: 0 17% 0 17%;
+    padding-top: 3rem;
+}
